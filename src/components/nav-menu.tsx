@@ -28,11 +28,16 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
           <Link href="/about">เกี่ยวกับเรา</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="/product">สินค้า</Link>
-        </NavigationMenuLink>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
-);
+       <NavigationMenuItem>
+         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+           <Link href="/product">สินค้า</Link>
+         </NavigationMenuLink>
+       </NavigationMenuItem>
+       <NavigationMenuItem>
+         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+           <Link href="/contact">ติดต่อเรา</Link>
+         </NavigationMenuLink>
+       </NavigationMenuItem>
+     </NavigationMenuList>
+   </NavigationMenu>
+ );
