@@ -4,6 +4,9 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
+## Development Guidelines
+For TypeScript code style and best practices: @Docs\typescript-guidelines.md
+
 # Repo: nextjs-ai-app-starter
 
 E-commerce starter (Next.js 16.2.7, React 19.2.7, Prisma 7, MariaDB, Tailwind v4).

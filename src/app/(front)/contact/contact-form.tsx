@@ -57,15 +57,15 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="flex flex-col items-center text-center gap-4 py-8">
-        <CheckCircle className="w-12 h-12 text-green-500" />
+        <CheckCircle className="w-12 h-12 text-success" />
         <div className="space-y-2">
-          <h3 className="text-xl font-semibold">ส่งข้อความเรียบร้อยแล้ว</h3>
+          <h3 className="text-xl font-semibold text-foreground">ส่งข้อความเรียบร้อยแล้ว</h3>
           <p className="text-muted-foreground">เราจะติดต่อกลับหาคุณโดยเร็วที่สุด</p>
         </div>
         <Button 
           variant="outline" 
           onClick={() => setIsSubmitted(false)}
-          className="mt-4"
+          className="mt-4 border-border hover:bg-secondary"
         >
           ส่งข้อความอีกครั้ง
         </Button>
@@ -81,11 +81,12 @@ export default function ContactForm() {
           control={form.control}
           render={({ field, fieldState }) => (
             <Field data-invalid={fieldState.invalid}>
-              <FieldLabel htmlFor="contact-name">ชื่อ</FieldLabel>
+              <FieldLabel htmlFor="contact-name" className="text-foreground font-semibold">ชื่อ</FieldLabel>
               <Input 
                 {...field} 
                 id="contact-name"
                 placeholder="กรอกชื่อของคุณ" 
+                className="bg-secondary border-border focus-visible:ring-primary"
                 aria-invalid={fieldState.invalid}
               />
               {fieldState.invalid && (
@@ -99,12 +100,13 @@ export default function ContactForm() {
           control={form.control}
           render={({ field, fieldState }) => (
             <Field data-invalid={fieldState.invalid}>
-              <FieldLabel htmlFor="contact-email">Email</FieldLabel>
+              <FieldLabel htmlFor="contact-email" className="text-foreground font-semibold">Email</FieldLabel>
               <Input 
                 {...field} 
                 id="contact-email"
                 type="email" 
                 placeholder="example@email.com" 
+                className="bg-secondary border-border focus-visible:ring-primary"
                 aria-invalid={fieldState.invalid}
               />
               {fieldState.invalid && (
@@ -118,12 +120,13 @@ export default function ContactForm() {
           control={form.control}
           render={({ field, fieldState }) => (
             <Field data-invalid={fieldState.invalid}>
-              <FieldLabel htmlFor="contact-message">ข้อความ</FieldLabel>
+              <FieldLabel htmlFor="contact-message" className="text-foreground font-semibold">ข้อความ</FieldLabel>
               <Textarea 
                 {...field} 
                 id="contact-message"
                 rows={5} 
                 placeholder="พิมพ์ข้อความที่ต้องการ..." 
+                className="bg-secondary border-border focus-visible:ring-primary"
                 aria-invalid={fieldState.invalid}
               />
               {fieldState.invalid && (
@@ -133,7 +136,7 @@ export default function ContactForm() {
           )}
         />
       </FieldGroup>
-      <Button type="submit" className="w-full" disabled={isPending}>
+      <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary-hover transition-colors" disabled={isPending}>
         {isPending ? 'กำลังส่ง...' : 'ส่งข้อความ'}
       </Button>
     </form>

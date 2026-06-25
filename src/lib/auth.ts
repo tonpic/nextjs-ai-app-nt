@@ -4,12 +4,22 @@ import prisma from "./prisma";
 
 export const auth = betterAuth({
     database: prismaAdapter(prisma, {
-        provider: "mysql", // or "mysql", "postgresql", ...etc
+        provider: "mysql",
     }),
     emailAndPassword: {
         enabled: true,
         autoSignIn: false,
         requireEmailVerification: false,
         minPasswordLength: 8
-    }
+    },
+    user: {
+        additionalFields: {
+            role: {
+                type: "string",
+                required: true,
+                defaultValue: "user",
+                input: true,
+            },
+        },
+    },
 });

@@ -22,3 +22,11 @@ C:\Users\ardui\Desktop\ai\nextjs-ai-app-starter\src\app\(front)\course\page.tsx
 const response = await fetch('https://api.codingthailand.com/api/course');
 const courseResponse = await response.json();
 "
+
+npx prisma db push
+/init # เริ่มต้นต้องทำครั้งแรก
+/dashboard/products
+ ZRCR-HVBF   
+ .agents/skills/<name>/SKILL.md
+ npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
+ เปลี่ยน add เป็น remove
