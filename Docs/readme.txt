@@ -38,3 +38,9 @@ npx prisma db push
  git add .
  git commit -m "update-project-onboard" 
  git push -u orgin main
+
+ 
+
+ 
+npx skills add https://github.com/tonpic/my-agent-skill-nt
+--skill nextjs-docker-best-practices
