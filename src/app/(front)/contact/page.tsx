@@ -40,7 +40,7 @@ export default function ContactPage() {
           
           <p className="text-muted-foreground leading-relaxed">
             เรายินดีให้บริการและตอบทุกข้อสงสัยของคุณ 
-            ทีมงานของเราจะพยายามตอบกลับภายใน 18 ชั่วโมงในวันทำการ
+            ทีมงานของเราจะพยายามตอบกลับภายใน 24 ชั่วโมงในวันทำการ
           </p>
         </div>
 
