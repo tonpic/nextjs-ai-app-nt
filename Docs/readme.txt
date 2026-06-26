@@ -33,7 +33,7 @@ npx prisma db push
 
  # แก้ไขไฟล์เล็กน้อย
  ที่ไฟล์ C:\Users\ardui\Desktop\ai\nextjs-ai-app-starter\src\app\(front)\contact\page.tsx
- ให้เปลี่ยนข้อความ ตอบกลับภายใน 1 ชั่วโมง เป็นตอบกลับภายใน 18 ชั่วโมง
+ ให้เปลี่ยนข้อความ ตอบกลับภายใน 18 ชั่วโมง เป็นตอบกลับภายใน 24 ชั่วโมง
 
  git add .
  git commit -m "update-project-onboard" 
@@ -44,3 +44,5 @@ npx prisma db push
  
 npx skills add https://github.com/tonpic/my-agent-skill-nt
 --skill nextjs-docker-best-practices
+
+C:\Users\ardui\Desktop\ai\nextjs-ai-app-starter\src\components\hero.tsx
