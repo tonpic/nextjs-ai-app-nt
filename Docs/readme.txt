@@ -30,3 +30,11 @@ npx prisma db push
  .agents/skills/<name>/SKILL.md
  npx skills add https://github.com/vercel-labs/agent-skills --skill vercel-react-best-practices
  เปลี่ยน add เป็น remove
+
+ # แก้ไขไฟล์เล็กน้อย
+ ที่ไฟล์ C:\Users\ardui\Desktop\ai\nextjs-ai-app-starter\src\app\(front)\contact\page.tsx
+ ให้เปลี่ยนข้อความ ตอบกลับภายใน 1 ชั่วโมง เป็นตอบกลับภายใน 18 ชั่วโมง
+
+ git add .
+ git commit -m "update-project-onboard" 
+ git push -u orgin main

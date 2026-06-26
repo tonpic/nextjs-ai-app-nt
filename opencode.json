@@ -5,7 +5,6 @@
   "permission": {
     "bash": {
       "git add *": "ask",  
-      "git commit *": "ask",
       "rm *": "ask"
     }
   },
