@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react"
 import Link from "next/link"
+import { Suspense } from "react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -80,7 +81,11 @@ export function AdminShell({ children }: { children: ReactNode }) {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 p-4 md:p-6">{children}</main>
+        <main className="flex-1 p-4 md:p-6">
+          <Suspense fallback={<div className="p-4 text-muted-foreground">กำลังโหลด...</div>}>
+            {children}
+          </Suspense>
+        </main>
       </div>
     </>
   )
